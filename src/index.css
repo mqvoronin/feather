@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@theme {
+  --color-primary: #e9672b;
+  --color-back: #fbf8f5;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+    @apply transition;
+  }
+  button:hover {
+    @apply scale-103;
+  }
+}
